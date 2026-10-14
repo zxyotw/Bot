@@ -1,0 +1,28 @@
+
+
+bot_name = "U"
+print(f"{bot_name}: Hello! I am {bot_name}.")
+print("Press Enter to continue or type 'exit' to quit: ")
+        
+while True:
+        user_input = input("You: ").lower()
+        
+
+        if user_input == "exit":
+            print(f"{bot_name}: Goodbye!")
+        elif user_input in ["hi", "hello", "hey"]:
+            print(f"{bot_name}: Hello! How can I assist you today?")
+        elif user_input in ["bye", "goodbye","see you later"]:
+            print(f"{bot_name}: Bye! Have a great day!")
+        elif user_input in ["add", "+"]:
+            print(f"{bot_name}: Adding the numbers from 1 to n.")
+            try:
+                num1=int(input("You: Enter the first number: "))
+                num2=int(input("You: Enter the second number: "))
+                print(f"{bot_name}: The sum of {num1} and {num2} is {num1 + num2}.")
+            except ValueError:
+                print(f"{bot_name}: Ops!That's not a number.Please enter valid numbers.")
+        else:
+            print(f"{bot_name}: Sorry, I didn't understand that. Can you please rephrase?")
+        input("Press Enter to continue...")
+
